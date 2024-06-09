@@ -1,0 +1,20 @@
+#evaluting expression
+<exp> ::= "("<number> space <symbol> space <number>")";
+
+# defines number as an integer or a decimal
+<number> ::= <integer> | <decimal>;
+
+#Defines the white space and allows to be called space
+<space> ::= " " ;
+
+#It is for a decimal followed by integers
+<fraction> ::=  "." integer+;
+
+#Defines the primary arithmetic operations
+<symbol> ::= ("+" | "-" | "*" | "/");
+
+#Integer is between 0 and 9
+<integer> ::= #'[0-9]+';
+
+#Defines decimal is an integer followed by a period and again followed by another integer
+<decimal> ::= <integer> "." <integer>;
