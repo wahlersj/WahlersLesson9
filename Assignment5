@@ -4,7 +4,7 @@
 # defines number as an integer or a decimal
 <number> ::= <integer> | <decimal>;
 
-#Defines the white space and allows to be called space
+#Defines the white space
 <space> ::= " " ;
 
 #It is for a decimal followed by integers
