@@ -1,3 +1,7 @@
+#Jacob Wahlers
+#CSC 330 - Lesson 9
+#Assignment 5
+
 #evaluting expression
 <exp> ::= "("<oeprator> space <operand> space <operator>")";
 
