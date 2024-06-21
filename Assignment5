@@ -20,7 +20,7 @@ integer    ::= digit { digit } ;
 #Defines the white space
 <space> ::= " " ;
 
-#Defines decimal is an integer followed by a period and again followed by another integer
+#Defines decimal is an digit followed by a period and again followed by another digit
 decimal    ::= digit "." digit
 
 #Defines paraenthesis
