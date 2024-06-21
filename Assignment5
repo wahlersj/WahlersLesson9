@@ -1,15 +1,26 @@
-expression ::= "(" operand operator operand ")"
+#evaluting expression
+<exp> ::= "("<oeprator> space <operand> space <operator>")";
 
+#Defines the digits used
 digit      ::= "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" ;
 
+#Defines number as an digit or a decimal
 operand    ::= digit | decimal
 
+#Defines the operators
+operator   ::= "+" | "-" | "*" | "/" | "*"
+
+#Defines what an integer is
 integer    ::= digit { digit } ;
 
-operator   ::= "+" | "-" | "*" | "/"
+#Defines the white space
+<space> ::= " " ;
 
+#Defines decimal is an integer followed by a period and again followed by another integer
 decimal    ::= digit "." digit
 
+#Defines paraenthesis
 parens     ::= "(" expression ")"
 
+#Defines Exit/Leave
 exit       ::= "exit" | "quit" | "end" ;
